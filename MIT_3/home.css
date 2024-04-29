@@ -1,0 +1,120 @@
+@import url(https://fonts.google.com/specimen/Poppins);
+
+body{
+    margin: 0px;
+    padding: 0px;
+    background-image: url(./images/bg-intro-desktop.png);
+    background-color: hsl(0, 100%, 74%) ;
+}
+
+.container{
+    display: flex;
+   align-items: center;
+   
+   
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    width: 400px;
+    height: 650px;
+    color: white;
+    font-family: Poppins;
+    align-items: center;
+    margin-left: 250px;
+    margin-top: 50px;
+}
+
+.firstpara{
+    font-size: 40px;
+    font-weight: 700;
+    margin-top: -10px;
+}
+
+.boxitems{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-left: 90px;
+    
+}
+
+.nextbox{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: white;
+   justify-content: center;
+   align-items: center;
+   border-radius: 10px;
+   width: 450px;
+   height: 400px;
+
+
+}
+
+.last{
+    display: flex;
+    gap: 5px;
+    font-size: small;
+}
+
+.llast{
+    color: red;
+}
+
+.flast{
+    color: grey;
+}
+
+#upbut{
+    width: 450px;
+    height: 45px;
+    border-radius: 8px;
+    background-color: hsl(248, 32%, 49%);
+    color: white;
+    border: none;
+}
+
+#firstname{
+    width: 400px;
+    height: 45px;
+    border-radius: 5px;
+    border-color: grey;
+    
+}
+
+#lastname{
+    width: 400px;
+    height: 45px;
+    border-radius: 5px;
+    border-color: grey;
+}
+
+#email{
+    width: 400px;
+    height: 45px;
+    border-radius: 5px;
+    border-color: grey;
+}
+
+#pass{
+    width: 400px;
+    height: 45px;
+    border-radius: 5px;
+    border-color: grey;
+}
+
+#lowbut{
+    width: 400px;
+    height: 45px;
+    background-color: hsl(154, 59%, 51%);
+    border: none; 
+    border-radius: 7px;  
+    color: white;
+}

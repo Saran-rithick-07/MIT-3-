@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+  
+  <title>MIT 3 | Intro component with sign up form</title>
+   <link rel="stylesheet" href="./home.css">
+
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+    <div class="container">
+      <div class="content">
+        <div class="firstpara">
+          Learn to code by Watching other
+        </div>
+        <div class="secondpara">
+          See how experienced developers solve problems in real time watching Scripted tutorials is great. but understanding how developers think is invaluable.
+        </div>
+      </div>
+          
+      <div class="boxitems">
+        <div class="topbox">
+          <button onclick="get()" id="upbut"> Try it free 7 days then $20/mo. thereafter    </button>
+        </div>
+        <div class="nextbox">
+          <input type="text" placeholder="firstname"    id="firstname">
+          <input type="text" placeholder="lastname"      id="lastname">
+          <input type="text" placeholder="Email address" id="email">
+          <input type="password" placeholder="password"  id="pass">
+
+          <div class="resultdata"></div>
+
+          <button  onclick="get()" id="lowbut" >  CLAIM YOUR FREE TRIAL</button>
+          
+        
+        <div class="last">
+          <div class="flast"> By clicking the button you are agreeing to our </div>
+          <div class="llast">Terms and services</div>
+        </div>
+      </div>
+      </div>
+
+
+
+
+
+    </div>
+
+    <script>
+     
+    function get() {
+         
+        var one  = document.getElementById("firstname").value;
+        var two = document.getElementById("lastname").value;
+        var three = document.getElementById("email").value;
+        var four = document.getElementById("pass").value;
+
+        if( (one !=four) &&  (two !=four) && (one.length>=4) && (four.length>=6 || four.length<=16))
+{
+  resultdata.innerHTML = "Login success";
+}
+
+else if( (one!="") &&  (two!="") &&  (three!="") &&  (four!="") ){
+  resultdata.innerHTML = "enter some details";
+}
+else{
+  resultdata.innerHTML = "invalid login";
+}
+      
+      
+      }
+
+    </script>
+
+
+</body>
+</html>
